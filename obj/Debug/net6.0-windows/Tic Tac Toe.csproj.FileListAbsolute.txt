@@ -1,0 +1,19 @@
+C:\Users\pc\Desktop\Tic Tac Toe\bin\Debug\net6.0-windows\Tic Tac Toe.exe
+C:\Users\pc\Desktop\Tic Tac Toe\bin\Debug\net6.0-windows\Tic Tac Toe.deps.json
+C:\Users\pc\Desktop\Tic Tac Toe\bin\Debug\net6.0-windows\Tic Tac Toe.runtimeconfig.json
+C:\Users\pc\Desktop\Tic Tac Toe\bin\Debug\net6.0-windows\Tic Tac Toe.dll
+C:\Users\pc\Desktop\Tic Tac Toe\bin\Debug\net6.0-windows\Tic Tac Toe.pdb
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic_Tac_Toe.Lobby.resources
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic_Tac_Toe.Properties.Resources.resources
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.AssemblyInfo.cs
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.dll
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\refint\Tic Tac Toe.dll
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.pdb
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic Tac Toe.genruntimeconfig.cache
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\ref\Tic Tac Toe.dll
+C:\Users\pc\Desktop\Tic Tac Toe\obj\Debug\net6.0-windows\Tic_Tac_Toe.InGame.resources
