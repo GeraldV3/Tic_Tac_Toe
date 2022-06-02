@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
-
 namespace Tic_Tac_Toe
 {
     public partial class InGame : Form
     {
         Form opener;
+        SoundPlayer InGameTheme = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\Theme Music.wav");
         SoundPlayer ButtonSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\ButtonSound.wav");
         SoundPlayer HomeSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\Pokemon.wav");
         bool flip = true;
-
+        
         public InGame()
         {
             InitializeComponent();
@@ -169,9 +169,6 @@ namespace Tic_Tac_Toe
             Turn9.Enabled = false;
             BTN_9.Visible = false;
         }
-        private void Retry_btn_Click(object sender, EventArgs e)
-        {
-        }
         private void Home_btn_Click(object sender, EventArgs e)
         {
             HomeSound.Play();
@@ -196,6 +193,13 @@ namespace Tic_Tac_Toe
                 win = true;
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
+
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
 
             if (win)
             {
@@ -230,6 +234,13 @@ namespace Tic_Tac_Toe
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
             if (win)
             {
                 String winner = "";
@@ -263,6 +274,13 @@ namespace Tic_Tac_Toe
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
             if (win)
             {
                 String winner = "";
@@ -294,6 +312,13 @@ namespace Tic_Tac_Toe
             if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
                 win = true;
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
 
             if (win)
             {
@@ -327,6 +352,13 @@ namespace Tic_Tac_Toe
                 win = true;
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
 
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
                 if (win)
             {
                 String winner = "";
@@ -358,6 +390,13 @@ namespace Tic_Tac_Toe
             if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
                 win = true;
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
 
                 if (win)
             {
@@ -391,6 +430,13 @@ namespace Tic_Tac_Toe
                 win = true;
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
 
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
                 if (win)
             {
                 String winner = "";
@@ -423,6 +469,13 @@ namespace Tic_Tac_Toe
                 win = true;
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
 
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
                 if (win)
             {
                 String winner = "";
@@ -439,7 +492,7 @@ namespace Tic_Tac_Toe
         }
         private void LBL_9_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
@@ -455,6 +508,13 @@ namespace Tic_Tac_Toe
                 win = true;
             if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
 
+            // Cross Line
+            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
                 if (win)
             {
                 String winner = "";
@@ -468,6 +528,13 @@ namespace Tic_Tac_Toe
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
             }
+        }
+        private void InGame_Load(object sender, EventArgs e)
+        {
+            InGameTheme.Play();
+        }
+        private void Retry_BTN_Click(object sender, EventArgs e)
+        {
         }
     }
 }

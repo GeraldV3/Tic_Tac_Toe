@@ -39,7 +39,6 @@
             this.BTN_7 = new System.Windows.Forms.Button();
             this.BTN_8 = new System.Windows.Forms.Button();
             this.BTN_9 = new System.Windows.Forms.Button();
-            this.Retry_btn = new System.Windows.Forms.PictureBox();
             this.Home_btn = new System.Windows.Forms.PictureBox();
             this.Player1 = new System.Windows.Forms.PictureBox();
             this.Player2 = new System.Windows.Forms.PictureBox();
@@ -53,11 +52,12 @@
             this.LBL_7 = new System.Windows.Forms.Label();
             this.LBL_8 = new System.Windows.Forms.Label();
             this.LBL_9 = new System.Windows.Forms.Label();
+            this.Retry_BTN = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Retry_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Retry_BTN)).BeginInit();
             this.SuspendLayout();
             // 
             // Grid
@@ -109,7 +109,7 @@
             // 
             this.BTN_4.BackColor = System.Drawing.Color.White;
             this.BTN_4.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_4_axie;
-            this.BTN_4.Location = new System.Drawing.Point(52, 326);
+            this.BTN_4.Location = new System.Drawing.Point(52, 327);
             this.BTN_4.Name = "BTN_4";
             this.BTN_4.Size = new System.Drawing.Size(126, 93);
             this.BTN_4.TabIndex = 13;
@@ -120,7 +120,7 @@
             // 
             this.BTN_5.BackColor = System.Drawing.Color.White;
             this.BTN_5.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_5_axie;
-            this.BTN_5.Location = new System.Drawing.Point(203, 326);
+            this.BTN_5.Location = new System.Drawing.Point(203, 327);
             this.BTN_5.Name = "BTN_5";
             this.BTN_5.Size = new System.Drawing.Size(126, 93);
             this.BTN_5.TabIndex = 14;
@@ -131,7 +131,7 @@
             // 
             this.BTN_6.BackColor = System.Drawing.Color.White;
             this.BTN_6.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_6_axie;
-            this.BTN_6.Location = new System.Drawing.Point(352, 328);
+            this.BTN_6.Location = new System.Drawing.Point(352, 327);
             this.BTN_6.Name = "BTN_6";
             this.BTN_6.Size = new System.Drawing.Size(126, 93);
             this.BTN_6.TabIndex = 15;
@@ -171,23 +171,11 @@
             this.BTN_9.UseVisualStyleBackColor = false;
             this.BTN_9.Click += new System.EventHandler(this.BTN_9_Click);
             // 
-            // Retry_btn
-            // 
-            this.Retry_btn.BackColor = System.Drawing.Color.Transparent;
-            this.Retry_btn.Image = global::Tic_Tac_Toe.Properties.Resources.Retry;
-            this.Retry_btn.Location = new System.Drawing.Point(327, 12);
-            this.Retry_btn.Name = "Retry_btn";
-            this.Retry_btn.Size = new System.Drawing.Size(177, 90);
-            this.Retry_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Retry_btn.TabIndex = 19;
-            this.Retry_btn.TabStop = false;
-            this.Retry_btn.Click += new System.EventHandler(this.Retry_btn_Click);
-            // 
             // Home_btn
             // 
             this.Home_btn.BackColor = System.Drawing.Color.Transparent;
             this.Home_btn.Image = global::Tic_Tac_Toe.Properties.Resources.Home;
-            this.Home_btn.Location = new System.Drawing.Point(32, 12);
+            this.Home_btn.Location = new System.Drawing.Point(33, 12);
             this.Home_btn.Name = "Home_btn";
             this.Home_btn.Size = new System.Drawing.Size(177, 90);
             this.Home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -269,11 +257,11 @@
             // 
             this.LBL_4.AutoSize = true;
             this.LBL_4.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_4.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_4.Font = new System.Drawing.Font("Baskerville Old Face", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_4.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_4.Location = new System.Drawing.Point(75, 328);
+            this.LBL_4.Location = new System.Drawing.Point(75, 336);
             this.LBL_4.Name = "LBL_4";
-            this.LBL_4.Size = new System.Drawing.Size(0, 92);
+            this.LBL_4.Size = new System.Drawing.Size(0, 76);
             this.LBL_4.TabIndex = 27;
             this.LBL_4.MouseHover += new System.EventHandler(this.LBL_4_MouseHover);
             // 
@@ -281,11 +269,11 @@
             // 
             this.LBL_5.AutoSize = true;
             this.LBL_5.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_5.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_5.Font = new System.Drawing.Font("Baskerville Old Face", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_5.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_5.Location = new System.Drawing.Point(226, 327);
+            this.LBL_5.Location = new System.Drawing.Point(231, 336);
             this.LBL_5.Name = "LBL_5";
-            this.LBL_5.Size = new System.Drawing.Size(0, 92);
+            this.LBL_5.Size = new System.Drawing.Size(0, 76);
             this.LBL_5.TabIndex = 28;
             this.LBL_5.MouseHover += new System.EventHandler(this.LBL_5_MouseHover);
             // 
@@ -293,11 +281,11 @@
             // 
             this.LBL_6.AutoSize = true;
             this.LBL_6.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_6.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_6.Font = new System.Drawing.Font("Baskerville Old Face", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LBL_6.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_6.Location = new System.Drawing.Point(369, 328);
+            this.LBL_6.Location = new System.Drawing.Point(369, 336);
             this.LBL_6.Name = "LBL_6";
-            this.LBL_6.Size = new System.Drawing.Size(0, 92);
+            this.LBL_6.Size = new System.Drawing.Size(0, 76);
             this.LBL_6.TabIndex = 29;
             this.LBL_6.MouseHover += new System.EventHandler(this.LBL_6_MouseHover);
             // 
@@ -337,6 +325,18 @@
             this.LBL_9.TabIndex = 32;
             this.LBL_9.MouseHover += new System.EventHandler(this.LBL_9_MouseHover);
             // 
+            // Retry_BTN
+            // 
+            this.Retry_BTN.BackColor = System.Drawing.Color.Transparent;
+            this.Retry_BTN.Image = global::Tic_Tac_Toe.Properties.Resources.Retry;
+            this.Retry_BTN.Location = new System.Drawing.Point(326, 12);
+            this.Retry_BTN.Name = "Retry_BTN";
+            this.Retry_BTN.Size = new System.Drawing.Size(177, 90);
+            this.Retry_BTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Retry_BTN.TabIndex = 33;
+            this.Retry_BTN.TabStop = false;
+            this.Retry_BTN.Click += new System.EventHandler(this.Retry_BTN_Click);
+            // 
             // InGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -344,6 +344,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.InGame;
             this.ClientSize = new System.Drawing.Size(534, 561);
+            this.Controls.Add(this.Retry_BTN);
             this.Controls.Add(this.LBL_9);
             this.Controls.Add(this.LBL_8);
             this.Controls.Add(this.LBL_7);
@@ -356,7 +357,6 @@
             this.Controls.Add(this.Player2);
             this.Controls.Add(this.Player1);
             this.Controls.Add(this.Home_btn);
-            this.Controls.Add(this.Retry_btn);
             this.Controls.Add(this.LBL_1);
             this.Controls.Add(this.BTN_9);
             this.Controls.Add(this.BTN_8);
@@ -371,11 +371,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InGame";
             this.Text = "InGame";
+            this.Load += new System.EventHandler(this.InGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Retry_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_btn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Retry_BTN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,7 +394,6 @@
         private Button BTN_7;
         private Button BTN_8;
         private Button BTN_9;
-        private PictureBox Retry_btn;
         private PictureBox Home_btn;
         private PictureBox Player1;
         private PictureBox Player2;
@@ -407,5 +407,6 @@
         private Label LBL_7;
         private Label LBL_8;
         private Label LBL_9;
+        private PictureBox Retry_BTN;
     }
 }
