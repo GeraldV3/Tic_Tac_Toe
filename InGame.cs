@@ -7,17 +7,164 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Tic_Tac_Toe
 {
     public partial class InGame : Form
     {
+        SoundPlayer ButtonSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\ButtonSound.wav");
+        bool flip = true;
         public InGame()
         {
             InitializeComponent();
+            //1st Layer
+            Button Turn = (BTN_1);
+            LBL_1.Visible = false;
+
+            Button Turn2 = (BTN_2);
+            LBL_2.Visible = false;
+
+            Button Turn3 = (BTN_3);
+            LBL_3.Visible = false;
+
+            //2nd Layer
+            Button Turn4 = (BTN_4);
+            LBL_4.Visible = false;
+
+            Button Turn5 = (BTN_5);
+            LBL_5.Visible = false;
+
+            Button Turn6 = (BTN_6);
+            LBL_6.Visible = false;
+
+            //3rd Layer
+            Button Turn7 = (BTN_4);
+            LBL_7.Visible = false;
+
+            Button Turn8 = (BTN_8);
+            LBL_8.Visible = false;
+
+            Button Turn9 = (BTN_9);
+            LBL_9.Visible = false;
+
         }
         private void BTN_1_Click(object sender, EventArgs e)
         {
+            ButtonSound.Play();
+            LBL_1.Visible = true;
+            Button Turn = (Button)sender;
+            if (flip)
+                LBL_1.Text = "X";
+            else
+                LBL_1.Text = "O";
+            flip = !flip;
+            Turn.Enabled = false;
+            BTN_1.Visible = false;
+        }
+        private void BTN_2_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_2.Visible = true;
+            Button Turn2 = (Button)sender;
+            if (flip)
+                LBL_2.Text = "X";
+            else
+                LBL_2.Text = "O";
+            flip = !flip;
+            Turn2.Enabled = false;
+            BTN_2.Visible = false;
+        }
+        private void BTN_3_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_3.Visible = true;
+            Button Turn3 = (Button)sender;
+            if (flip)
+                LBL_3.Text = "X";
+            else
+                LBL_3.Text = "O";
+            flip = !flip;
+            Turn3.Enabled = false;
+            BTN_3.Visible = false;
+        }
+        private void BTN_4_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_4.Visible = true;
+            Button Turn4 = (Button)sender;
+            if (flip)
+                LBL_4.Text = "X";
+            else
+                LBL_4.Text = "O";
+            flip = !flip;
+            Turn4.Enabled = false;
+            BTN_4.Visible = false;
+        }
+        private void BTN_5_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_5.Visible = true;
+            Button Turn5 = (Button)sender;
+            if (flip)
+                LBL_5.Text = "X";
+            else
+                LBL_5.Text = "O";
+            flip = !flip;
+            Turn5.Enabled = false;
+            BTN_5.Visible = false;
+        }
+        private void BTN_6_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_6.Visible = true;
+            Button Turn6 = (Button)sender;
+            if (flip)
+                LBL_6.Text = "X";
+            else
+                LBL_6.Text = "O";
+            flip = !flip;
+            Turn6.Enabled = false;
+            BTN_6.Visible = false;
+        }
+        private void BTN_7_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_7.Visible = true;
+            Button Turn7 = (Button)sender;
+            if (flip)
+                LBL_7.Text = "X";
+            else
+                LBL_5.Text = "O";
+            flip = !flip;
+            Turn7.Enabled = false;
+            BTN_7.Visible = false;
+        }
+        private void BTN_8_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_8.Visible = true;
+            Button Turn8 = (Button)sender;
+            if (flip)
+                LBL_8.Text = "X";
+            else
+                LBL_8.Text = "O";
+            flip = !flip;
+            Turn8.Enabled = false;
+            BTN_8.Visible = false;
+        }
+        private void BTN_9_Click(object sender, EventArgs e)
+        {
+            ButtonSound.Play();
+            LBL_9.Visible = true;
+            Button Turn9 = (Button)sender;
+            if (flip)
+                LBL_9.Text = "X";
+            else
+                LBL_9.Text = "O";
+            flip = !flip;
+            Turn9.Enabled = false;
+            BTN_9.Visible = false;
         }
     }
 }
