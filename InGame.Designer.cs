@@ -75,7 +75,7 @@
             this.BTN_1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTN_1.Font = new System.Drawing.Font("Athletic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_1.Image = global::Tic_Tac_Toe.Properties.Resources.BTN1_axie;
-            this.BTN_1.Location = new System.Drawing.Point(49, 211);
+            this.BTN_1.Location = new System.Drawing.Point(52, 213);
             this.BTN_1.Name = "BTN_1";
             this.BTN_1.Size = new System.Drawing.Size(126, 93);
             this.BTN_1.TabIndex = 10;
@@ -98,7 +98,7 @@
             // 
             this.BTN_3.BackColor = System.Drawing.Color.White;
             this.BTN_3.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_3_axie;
-            this.BTN_3.Location = new System.Drawing.Point(352, 212);
+            this.BTN_3.Location = new System.Drawing.Point(352, 211);
             this.BTN_3.Name = "BTN_3";
             this.BTN_3.Size = new System.Drawing.Size(126, 93);
             this.BTN_3.TabIndex = 12;
@@ -109,7 +109,7 @@
             // 
             this.BTN_4.BackColor = System.Drawing.Color.White;
             this.BTN_4.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_4_axie;
-            this.BTN_4.Location = new System.Drawing.Point(52, 327);
+            this.BTN_4.Location = new System.Drawing.Point(52, 326);
             this.BTN_4.Name = "BTN_4";
             this.BTN_4.Size = new System.Drawing.Size(126, 93);
             this.BTN_4.TabIndex = 13;
@@ -120,7 +120,7 @@
             // 
             this.BTN_5.BackColor = System.Drawing.Color.White;
             this.BTN_5.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_5_axie;
-            this.BTN_5.Location = new System.Drawing.Point(203, 327);
+            this.BTN_5.Location = new System.Drawing.Point(203, 326);
             this.BTN_5.Name = "BTN_5";
             this.BTN_5.Size = new System.Drawing.Size(126, 93);
             this.BTN_5.TabIndex = 14;
@@ -131,7 +131,7 @@
             // 
             this.BTN_6.BackColor = System.Drawing.Color.White;
             this.BTN_6.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_6_axie;
-            this.BTN_6.Location = new System.Drawing.Point(352, 327);
+            this.BTN_6.Location = new System.Drawing.Point(352, 328);
             this.BTN_6.Name = "BTN_6";
             this.BTN_6.Size = new System.Drawing.Size(126, 93);
             this.BTN_6.TabIndex = 15;
@@ -153,7 +153,7 @@
             // 
             this.BTN_8.BackColor = System.Drawing.Color.White;
             this.BTN_8.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_8_axie;
-            this.BTN_8.Location = new System.Drawing.Point(203, 440);
+            this.BTN_8.Location = new System.Drawing.Point(203, 441);
             this.BTN_8.Name = "BTN_8";
             this.BTN_8.Size = new System.Drawing.Size(126, 93);
             this.BTN_8.TabIndex = 17;
@@ -164,7 +164,7 @@
             // 
             this.BTN_9.BackColor = System.Drawing.Color.White;
             this.BTN_9.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_9_axie;
-            this.BTN_9.Location = new System.Drawing.Point(352, 440);
+            this.BTN_9.Location = new System.Drawing.Point(352, 441);
             this.BTN_9.Name = "BTN_9";
             this.BTN_9.Size = new System.Drawing.Size(126, 93);
             this.BTN_9.TabIndex = 18;
@@ -175,9 +175,9 @@
             // 
             this.Retry_btn.BackColor = System.Drawing.Color.Transparent;
             this.Retry_btn.Image = global::Tic_Tac_Toe.Properties.Resources.Retry;
-            this.Retry_btn.Location = new System.Drawing.Point(431, 12);
+            this.Retry_btn.Location = new System.Drawing.Point(327, 12);
             this.Retry_btn.Name = "Retry_btn";
-            this.Retry_btn.Size = new System.Drawing.Size(91, 61);
+            this.Retry_btn.Size = new System.Drawing.Size(177, 90);
             this.Retry_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Retry_btn.TabIndex = 19;
             this.Retry_btn.TabStop = false;
@@ -187,9 +187,9 @@
             // 
             this.Home_btn.BackColor = System.Drawing.Color.Transparent;
             this.Home_btn.Image = global::Tic_Tac_Toe.Properties.Resources.Home;
-            this.Home_btn.Location = new System.Drawing.Point(12, 12);
+            this.Home_btn.Location = new System.Drawing.Point(32, 12);
             this.Home_btn.Name = "Home_btn";
-            this.Home_btn.Size = new System.Drawing.Size(91, 61);
+            this.Home_btn.Size = new System.Drawing.Size(177, 90);
             this.Home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Home_btn.TabIndex = 20;
             this.Home_btn.TabStop = false;
@@ -228,6 +228,7 @@
             this.LBL_1.Name = "LBL_1";
             this.LBL_1.Size = new System.Drawing.Size(0, 92);
             this.LBL_1.TabIndex = 23;
+            this.LBL_1.MouseHover += new System.EventHandler(this.LBL_1_MouseHover);
             // 
             // label1
             // 
@@ -250,6 +251,7 @@
             this.LBL_2.Name = "LBL_2";
             this.LBL_2.Size = new System.Drawing.Size(0, 92);
             this.LBL_2.TabIndex = 25;
+            this.LBL_2.MouseHover += new System.EventHandler(this.LBL_2_MouseHover);
             // 
             // LBL_3
             // 
@@ -261,6 +263,7 @@
             this.LBL_3.Name = "LBL_3";
             this.LBL_3.Size = new System.Drawing.Size(0, 92);
             this.LBL_3.TabIndex = 26;
+            this.LBL_3.MouseHover += new System.EventHandler(this.LBL_3_MouseHover);
             // 
             // LBL_4
             // 
@@ -272,6 +275,7 @@
             this.LBL_4.Name = "LBL_4";
             this.LBL_4.Size = new System.Drawing.Size(0, 92);
             this.LBL_4.TabIndex = 27;
+            this.LBL_4.MouseHover += new System.EventHandler(this.LBL_4_MouseHover);
             // 
             // LBL_5
             // 
@@ -283,6 +287,7 @@
             this.LBL_5.Name = "LBL_5";
             this.LBL_5.Size = new System.Drawing.Size(0, 92);
             this.LBL_5.TabIndex = 28;
+            this.LBL_5.MouseHover += new System.EventHandler(this.LBL_5_MouseHover);
             // 
             // LBL_6
             // 
@@ -294,6 +299,7 @@
             this.LBL_6.Name = "LBL_6";
             this.LBL_6.Size = new System.Drawing.Size(0, 92);
             this.LBL_6.TabIndex = 29;
+            this.LBL_6.MouseHover += new System.EventHandler(this.LBL_6_MouseHover);
             // 
             // LBL_7
             // 
@@ -305,6 +311,7 @@
             this.LBL_7.Name = "LBL_7";
             this.LBL_7.Size = new System.Drawing.Size(0, 92);
             this.LBL_7.TabIndex = 30;
+            this.LBL_7.MouseHover += new System.EventHandler(this.LBL_7_MouseHover);
             // 
             // LBL_8
             // 
@@ -316,6 +323,7 @@
             this.LBL_8.Name = "LBL_8";
             this.LBL_8.Size = new System.Drawing.Size(0, 92);
             this.LBL_8.TabIndex = 31;
+            this.LBL_8.MouseHover += new System.EventHandler(this.LBL_8_MouseHover);
             // 
             // LBL_9
             // 
@@ -327,6 +335,7 @@
             this.LBL_9.Name = "LBL_9";
             this.LBL_9.Size = new System.Drawing.Size(0, 92);
             this.LBL_9.TabIndex = 32;
+            this.LBL_9.MouseHover += new System.EventHandler(this.LBL_9_MouseHover);
             // 
             // InGame
             // 
@@ -335,16 +344,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.InGame;
             this.ClientSize = new System.Drawing.Size(534, 561);
-            this.Controls.Add(this.BTN_1);
-            this.Controls.Add(this.BTN_9);
-            this.Controls.Add(this.BTN_8);
-            this.Controls.Add(this.BTN_7);
-            this.Controls.Add(this.BTN_6);
-            this.Controls.Add(this.BTN_5);
-            this.Controls.Add(this.BTN_4);
-            this.Controls.Add(this.BTN_3);
-            this.Controls.Add(this.BTN_2);
-            this.Controls.Add(this.LBL_1);
             this.Controls.Add(this.LBL_9);
             this.Controls.Add(this.LBL_8);
             this.Controls.Add(this.LBL_7);
@@ -358,6 +357,16 @@
             this.Controls.Add(this.Player1);
             this.Controls.Add(this.Home_btn);
             this.Controls.Add(this.Retry_btn);
+            this.Controls.Add(this.LBL_1);
+            this.Controls.Add(this.BTN_9);
+            this.Controls.Add(this.BTN_8);
+            this.Controls.Add(this.BTN_7);
+            this.Controls.Add(this.BTN_6);
+            this.Controls.Add(this.BTN_5);
+            this.Controls.Add(this.BTN_4);
+            this.Controls.Add(this.BTN_3);
+            this.Controls.Add(this.BTN_2);
+            this.Controls.Add(this.BTN_1);
             this.Controls.Add(this.Grid);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InGame";

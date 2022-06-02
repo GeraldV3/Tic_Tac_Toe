@@ -17,7 +17,7 @@ namespace Tic_Tac_Toe
         SoundPlayer ButtonSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\ButtonSound.wav");
         SoundPlayer HomeSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\Pokemon.wav");
         bool flip = true;
-        
+
         public InGame()
         {
             InitializeComponent();
@@ -51,7 +51,6 @@ namespace Tic_Tac_Toe
 
             Button Turn9 = (BTN_9);
             LBL_9.Visible = false;
-
         }
         private void BTN_1_Click(object sender, EventArgs e)
         {
@@ -170,7 +169,6 @@ namespace Tic_Tac_Toe
             Turn9.Enabled = false;
             BTN_9.Visible = false;
         }
-
         private void Retry_btn_Click(object sender, EventArgs e)
         {
         }
@@ -179,6 +177,231 @@ namespace Tic_Tac_Toe
             HomeSound.Play();
             opener.Close();
             this.Close();
+        }
+        private void LBL_1_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled)) 
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_2_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) )
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_3_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_4_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_5_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_6_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_7_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_8_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+        }
+        private void LBL_9_MouseHover(object sender, EventArgs e)
+        {
+            // Straight
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
+                win = true;
+            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
         }
     }
 }

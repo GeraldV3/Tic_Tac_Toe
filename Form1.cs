@@ -24,7 +24,7 @@ namespace Tic_Tac_Toe
             InGame Start = new InGame();
             Start.ShowDialog();
             this.Show();
-
+            LobbyTheme.Play();
         }
         private void Quit_btn_Click(object sender, EventArgs e)
         {
