@@ -180,13 +180,21 @@ namespace Tic_Tac_Toe
         }
         private void LBL_1_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
                 win = true;
             if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled)) 
                 win = true;
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
+                win = true;
+
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
             if (win)
@@ -205,13 +213,21 @@ namespace Tic_Tac_Toe
         }
         private void LBL_2_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
-            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) )
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
             if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
                 win = true;
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
             if (win)
@@ -230,13 +246,21 @@ namespace Tic_Tac_Toe
         }
         private void LBL_3_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
             if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
                 win = true;
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
             if (win)
@@ -255,7 +279,7 @@ namespace Tic_Tac_Toe
         }
         private void LBL_4_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
                 win = true;
@@ -263,6 +287,13 @@ namespace Tic_Tac_Toe
                 win = true;
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
                 win = true;
+
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
 
             if (win)
             {
@@ -280,7 +311,7 @@ namespace Tic_Tac_Toe
         }
         private void LBL_5_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
@@ -289,7 +320,14 @@ namespace Tic_Tac_Toe
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
-            if (win)
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+
+                if (win)
             {
                 String winner = "";
                 if (flip)
@@ -305,7 +343,7 @@ namespace Tic_Tac_Toe
         }
         private void LBL_6_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
@@ -314,7 +352,14 @@ namespace Tic_Tac_Toe
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
-            if (win)
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+
+                if (win)
             {
                 String winner = "";
                 if (flip)
@@ -330,7 +375,7 @@ namespace Tic_Tac_Toe
         }
         private void LBL_7_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
                 win = true;
@@ -339,7 +384,14 @@ namespace Tic_Tac_Toe
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
                 win = true;
 
-            if (win)
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+
+                if (win)
             {
                 String winner = "";
                 if (flip)
@@ -355,7 +407,7 @@ namespace Tic_Tac_Toe
         }
         private void LBL_8_MouseHover(object sender, EventArgs e)
         {
-            // Straight
+            // Straight Line
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
@@ -364,7 +416,14 @@ namespace Tic_Tac_Toe
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
-            if (win)
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+
+                if (win)
             {
                 String winner = "";
                 if (flip)
@@ -389,7 +448,14 @@ namespace Tic_Tac_Toe
             if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
-            if (win)
+            // Standing Line
+            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+
+                if (win)
             {
                 String winner = "";
                 if (flip)
