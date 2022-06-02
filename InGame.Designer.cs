@@ -72,7 +72,7 @@
             // 
             // BTN_1
             // 
-            this.BTN_1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BTN_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_1.Font = new System.Drawing.Font("Athletic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_1.Image = global::Tic_Tac_Toe.Properties.Resources.BTN1_axie;
             this.BTN_1.Location = new System.Drawing.Point(52, 213);
@@ -84,7 +84,7 @@
             // 
             // BTN_2
             // 
-            this.BTN_2.BackColor = System.Drawing.Color.White;
+            this.BTN_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BTN_2.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_2_axie;
             this.BTN_2.Location = new System.Drawing.Point(203, 212);
@@ -96,7 +96,7 @@
             // 
             // BTN_3
             // 
-            this.BTN_3.BackColor = System.Drawing.Color.White;
+            this.BTN_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_3.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_3_axie;
             this.BTN_3.Location = new System.Drawing.Point(352, 211);
             this.BTN_3.Name = "BTN_3";
@@ -107,7 +107,7 @@
             // 
             // BTN_4
             // 
-            this.BTN_4.BackColor = System.Drawing.Color.White;
+            this.BTN_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_4.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_4_axie;
             this.BTN_4.Location = new System.Drawing.Point(52, 327);
             this.BTN_4.Name = "BTN_4";
@@ -118,7 +118,7 @@
             // 
             // BTN_5
             // 
-            this.BTN_5.BackColor = System.Drawing.Color.White;
+            this.BTN_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_5.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_5_axie;
             this.BTN_5.Location = new System.Drawing.Point(203, 327);
             this.BTN_5.Name = "BTN_5";
@@ -129,7 +129,7 @@
             // 
             // BTN_6
             // 
-            this.BTN_6.BackColor = System.Drawing.Color.White;
+            this.BTN_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_6.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_6_axie;
             this.BTN_6.Location = new System.Drawing.Point(352, 327);
             this.BTN_6.Name = "BTN_6";
@@ -140,7 +140,7 @@
             // 
             // BTN_7
             // 
-            this.BTN_7.BackColor = System.Drawing.Color.White;
+            this.BTN_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_7.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_7_axie;
             this.BTN_7.Location = new System.Drawing.Point(52, 440);
             this.BTN_7.Name = "BTN_7";
@@ -151,7 +151,7 @@
             // 
             // BTN_8
             // 
-            this.BTN_8.BackColor = System.Drawing.Color.White;
+            this.BTN_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_8.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_8_axie;
             this.BTN_8.Location = new System.Drawing.Point(203, 441);
             this.BTN_8.Name = "BTN_8";
@@ -162,7 +162,7 @@
             // 
             // BTN_9
             // 
-            this.BTN_9.BackColor = System.Drawing.Color.White;
+            this.BTN_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_9.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_9_axie;
             this.BTN_9.Location = new System.Drawing.Point(352, 441);
             this.BTN_9.Name = "BTN_9";

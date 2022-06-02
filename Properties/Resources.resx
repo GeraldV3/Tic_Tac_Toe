@@ -127,14 +127,14 @@
   <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Retry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\Retry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Theme_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\Theme Music.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BTN 6 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\BTN 6 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Player 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\Player 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Retry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\Retry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BTN1 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\BTN1 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +142,8 @@
   <data name="BTN 4 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\BTN 4 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BTN 8 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\BTN 8 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BTN 7 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\BTN 7 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BTN 3 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\BTN 3 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,11 +151,17 @@
   <data name="Start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\Start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Player 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\Player 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTN 2 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\BTN 2 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\Quit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="InGame" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\InGame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Player 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\Player 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BTN 9 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\BTN 9 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,19 +187,13 @@
   <data name="Grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\Grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BTN 2 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\BTN 2 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BTN 8 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\BTN 8 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Player 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Picture and Sound\Player 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BTN 7 axie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\BTN 7 axie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Player 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\Player 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Theme_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Picture and Sound\Theme Music.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="InGame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Picture and Sound\InGame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

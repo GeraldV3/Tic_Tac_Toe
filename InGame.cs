@@ -17,6 +17,7 @@ namespace Tic_Tac_Toe
         SoundPlayer ButtonSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\ButtonSound.wav");
         SoundPlayer HomeSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\Pokemon.wav");
         bool flip = true;
+        int counter = 0;
         
         public InGame()
         {
@@ -25,6 +26,7 @@ namespace Tic_Tac_Toe
             //1st Layer
             Button Turn = (BTN_1);
             LBL_1.Visible = false;
+  
 
             Button Turn2 = (BTN_2);
             LBL_2.Visible = false;
@@ -181,23 +183,23 @@ namespace Tic_Tac_Toe
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
                 win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled)) 
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled))
                 win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
+            else if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
                 win = true;
 
             // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
+            else if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
                 win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
+            else if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
                 win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
+            else if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
             // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+            else if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+            else if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
                 win = true;
 
 
@@ -213,6 +215,11 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+            if (counter == 9)
+
+            {
+                MessageBox.Show("It`s a Draw");
             }
         }
         private void LBL_2_MouseHover(object sender, EventArgs e)
@@ -221,23 +228,23 @@ namespace Tic_Tac_Toe
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
                 win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+            else if((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
             // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
+            else if((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
                 win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
+            else if((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
                 win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
+            else if((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
             // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+            else if((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+            else if((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
                 win = true;
 
 
@@ -253,6 +260,11 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+            counter = counter + 1;
+            if (counter == 9)
+            {
+                MessageBox.Show("It`s a Draw");
             }
         }
         private void LBL_3_MouseHover(object sender, EventArgs e)
@@ -261,23 +273,23 @@ namespace Tic_Tac_Toe
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+            else if((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
                 win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+            else if((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
             // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
+            else if((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text) && (!LBL_1.Enabled))
                 win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
+            else if((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text) && (!LBL_2.Enabled))
                 win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
+            else if((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text) && (!LBL_3.Enabled))
                 win = true;
 
             // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+            else if((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+            else if((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
                 win = true;
 
 
@@ -293,6 +305,11 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+            counter = counter + 1;
+            if (counter == 9)
+            {
+                MessageBox.Show("It`s a Draw");
             }
         }
         private void LBL_4_MouseHover(object sender, EventArgs e)
@@ -301,21 +318,112 @@ namespace Tic_Tac_Toe
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
                 win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled))
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled))
                 win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
+            else if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
                 win = true;
 
             // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+            else if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
                 win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+            else if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+            else if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+                win= true;
 
             // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+            else if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
                 win = true;
+            else if((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
+            if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+            counter = counter + 1;
+            if (counter == 9)
+            {
+                MessageBox.Show("It`s a Draw");
+            }
+        }
+        private void LBL_5_MouseHover(object sender, EventArgs e)
+        {
+            // Straight Line
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
+                win = true;
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            else if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            // Standing Line
+            else if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            else if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            else if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+                win= true;
+
+            // Cross Line
+            else if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                win = true;
+            else if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+                win = true;
+
+
+                if (win)
+            {
+                String winner = "";
+                if (flip)
+                {
+                    winner = "O";
+                }
+                else
+                {
+                    winner = "X";
+                }
+                MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+            counter = counter + 1;
+            if (counter == 9)
+            {
+                MessageBox.Show("It`s a Draw");
+            }
+        }
+        private void LBL_6_MouseHover(object sender, EventArgs e)
+        {
+            // Straight Line
+            bool win = false;
+            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
+                win = true;
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+                win = true;
+            else if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+                win = true;
+
+            // Standing Line
+            else if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+                win = true;
+            else if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+                win = true;
+            else if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+                win= true;
+
+                // Cross Line
+            else if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+                    win = true;
             if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
                 win = true;
 
@@ -333,83 +441,10 @@ namespace Tic_Tac_Toe
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
             }
-        }
-        private void LBL_5_MouseHover(object sender, EventArgs e)
-        {
-            // Straight Line
-            bool win = false;
-            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
-                win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
-                win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
-                win = true;
-
-            // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
-                win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
-                win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
-
-            // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
-                win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
-                win = true;
-
-
-                if (win)
+            counter = counter + 1;
+            if (counter == 9)
             {
-                String winner = "";
-                if (flip)
-                {
-                    winner = "O";
-                }
-                else
-                {
-                    winner = "X";
-                }
-                MessageBox.Show(winner + " Wins 100 Pesos");
-            }
-        }
-        private void LBL_6_MouseHover(object sender, EventArgs e)
-        {
-            // Straight Line
-            bool win = false;
-            if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
-                win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
-                win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
-                win = true;
-
-            // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
-                win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
-                win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
-
-            // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
-                win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
-                win = true;
-
-
-                if (win)
-            {
-                String winner = "";
-                if (flip)
-                {
-                    winner = "O";
-                }
-                else
-                {
-                    winner = "X";
-                }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("It`s a Draw");
             }
         }
         private void LBL_7_MouseHover(object sender, EventArgs e)
@@ -418,22 +453,23 @@ namespace Tic_Tac_Toe
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text) && (!LBL_1.Enabled))
                 win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled))
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text) && (!LBL_4.Enabled))
                 win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
+            else if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text) && (!LBL_7.Enabled))
                 win = true;
 
             // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+            else if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
                 win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+            else if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+            else if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+                win = true;
 
             // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+            else if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+            else if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
                 win = true;
 
 
@@ -449,6 +485,11 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+            counter = counter + 1;
+            if (counter == 9)
+            {
+                MessageBox.Show("It`s a Draw");
             }
         }
         private void LBL_8_MouseHover(object sender, EventArgs e)
@@ -457,22 +498,23 @@ namespace Tic_Tac_Toe
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
                 win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+            else if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
             // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+            else if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
                 win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+            else if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+            else if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+                win= true;
 
             // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+            else if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+            else if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
                 win = true;
 
 
@@ -489,6 +531,11 @@ namespace Tic_Tac_Toe
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
             }
+            counter = counter + 1;
+            if (counter == 9)
+            {
+                MessageBox.Show("It`s a Draw");
+            }
         }
         private void LBL_9_MouseHover(object sender, EventArgs e)
         {
@@ -496,22 +543,23 @@ namespace Tic_Tac_Toe
             bool win = false;
             if ((LBL_1.Text == LBL_2.Text) && (LBL_2.Text == LBL_3.Text))
                 win = true;
-            if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
+            else if ((LBL_4.Text == LBL_5.Text) && (LBL_5.Text == LBL_6.Text))
                 win = true;
-            if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
+            else if ((LBL_7.Text == LBL_8.Text) && (LBL_8.Text == LBL_9.Text))
                 win = true;
 
             // Standing Line
-            if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
+            else if ((LBL_1.Text == LBL_4.Text) && (LBL_4.Text == LBL_7.Text))
                 win = true;
-            if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
+            else if ((LBL_2.Text == LBL_5.Text) && (LBL_5.Text == LBL_8.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+            else if ((LBL_3.Text == LBL_6.Text) && (LBL_6.Text == LBL_9.Text))
+                win = true;
 
             // Cross Line
-            if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
+            else if ((LBL_1.Text == LBL_5.Text) && (LBL_5.Text == LBL_9.Text))
                 win = true;
-            if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
+            else if ((LBL_3.Text == LBL_5.Text) && (LBL_5.Text == LBL_7.Text))
                 win = true;
 
 
@@ -527,6 +575,11 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+            }
+            counter = counter + 1;
+            if (counter == 9)
+            {
+                MessageBox.Show("It`s a Draw");
             }
         }
         private void InGame_Load(object sender, EventArgs e)

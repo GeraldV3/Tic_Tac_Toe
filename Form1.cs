@@ -19,7 +19,6 @@ namespace Tic_Tac_Toe
         }
         private void Start_btn_Click(object sender, EventArgs e)
         {
-            Task.Delay(10000);
             StartSound.Play();
             this.Hide();
             InGame Start = new InGame();
