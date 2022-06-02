@@ -20,8 +20,11 @@ namespace Tic_Tac_Toe
         private void Start_btn_Click(object sender, EventArgs e)
         {
             StartSound.Play();
+            this.Hide();
             InGame Start = new InGame();
             Start.ShowDialog();
+            this.Show();
+
         }
         private void Quit_btn_Click(object sender, EventArgs e)
         {

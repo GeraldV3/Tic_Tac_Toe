@@ -13,11 +13,15 @@ namespace Tic_Tac_Toe
 {
     public partial class InGame : Form
     {
+        Form opener;
         SoundPlayer ButtonSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\ButtonSound.wav");
+        SoundPlayer HomeSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\Pokemon.wav");
         bool flip = true;
+        
         public InGame()
         {
             InitializeComponent();
+            opener = new Form();
             //1st Layer
             Button Turn = (BTN_1);
             LBL_1.Visible = false;
@@ -165,6 +169,16 @@ namespace Tic_Tac_Toe
             flip = !flip;
             Turn9.Enabled = false;
             BTN_9.Visible = false;
+        }
+
+        private void Retry_btn_Click(object sender, EventArgs e)
+        {
+        }
+        private void Home_btn_Click(object sender, EventArgs e)
+        {
+            HomeSound.Play();
+            opener.Close();
+            this.Close();
         }
     }
 }

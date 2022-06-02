@@ -181,6 +181,7 @@
             this.Retry_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Retry_btn.TabIndex = 19;
             this.Retry_btn.TabStop = false;
+            this.Retry_btn.Click += new System.EventHandler(this.Retry_btn_Click);
             // 
             // Home_btn
             // 
@@ -192,6 +193,7 @@
             this.Home_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Home_btn.TabIndex = 20;
             this.Home_btn.TabStop = false;
+            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click);
             // 
             // Player1
             // 
