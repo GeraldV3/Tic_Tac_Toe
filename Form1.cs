@@ -9,7 +9,6 @@ namespace Tic_Tac_Toe
         {
             InitializeComponent();
         }
-
         private void Start_btn_MouseHover(object sender, EventArgs e)
         {
             Start_btn.Image = Properties.Resources.Start1;
@@ -18,14 +17,12 @@ namespace Tic_Tac_Toe
         {
             Start_btn.Image = Properties.Resources.Start;
         }
-
         private void Start_btn_Click(object sender, EventArgs e)
         {
             StartSound.Play();
             InGame Start = new InGame();
             Start.ShowDialog();
         }
-
         private void Quit_btn_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -38,7 +35,6 @@ namespace Tic_Tac_Toe
         {
             Quit_btn.Image = Properties.Resources.Quit;
         }
-
         private void Lobby_Load(object sender, EventArgs e)
         {
             LobbyTheme.Play();
