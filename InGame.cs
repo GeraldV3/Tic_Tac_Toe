@@ -215,11 +215,31 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
+            counter = counter + 1;
             if (counter == 9)
 
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_2_MouseHover(object sender, EventArgs e)
@@ -260,11 +280,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_3_MouseHover(object sender, EventArgs e)
@@ -305,11 +344,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_4_MouseHover(object sender, EventArgs e)
@@ -350,11 +408,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_5_MouseHover(object sender, EventArgs e)
@@ -395,11 +472,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_6_MouseHover(object sender, EventArgs e)
@@ -440,11 +536,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_7_MouseHover(object sender, EventArgs e)
@@ -485,11 +600,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_8_MouseHover(object sender, EventArgs e)
@@ -530,11 +664,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void LBL_9_MouseHover(object sender, EventArgs e)
@@ -575,11 +728,30 @@ namespace Tic_Tac_Toe
                     winner = "X";
                 }
                 MessageBox.Show(winner + " Wins 100 Pesos");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
+                counter = 0;
             }
             counter = counter + 1;
             if (counter == 9)
             {
                 MessageBox.Show("It`s a Draw");
+                LBL_1.Text = "";
+                LBL_2.Text = "";
+                LBL_3.Text = "";
+                LBL_4.Text = "";
+                LBL_5.Text = "";
+                LBL_6.Text = "";
+                LBL_7.Text = "";
+                LBL_8.Text = "";
+                LBL_9.Text = "";
             }
         }
         private void InGame_Load(object sender, EventArgs e)
