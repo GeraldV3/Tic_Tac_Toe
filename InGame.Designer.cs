@@ -53,6 +53,7 @@
             this.LBL_8 = new System.Windows.Forms.Label();
             this.LBL_9 = new System.Windows.Forms.Label();
             this.Retry_BTN = new System.Windows.Forms.PictureBox();
+            this.ScoreX_LBL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
@@ -337,6 +338,18 @@
             this.Retry_BTN.TabStop = false;
             this.Retry_BTN.Click += new System.EventHandler(this.Retry_BTN_Click);
             // 
+            // ScoreX_LBL
+            // 
+            this.ScoreX_LBL.AutoSize = true;
+            this.ScoreX_LBL.BackColor = System.Drawing.Color.Transparent;
+            this.ScoreX_LBL.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ScoreX_LBL.ForeColor = System.Drawing.Color.Black;
+            this.ScoreX_LBL.Location = new System.Drawing.Point(184, 95);
+            this.ScoreX_LBL.Name = "ScoreX_LBL";
+            this.ScoreX_LBL.Size = new System.Drawing.Size(74, 86);
+            this.ScoreX_LBL.TabIndex = 34;
+            this.ScoreX_LBL.Text = "0";
+            // 
             // InGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -344,6 +357,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.InGame;
             this.ClientSize = new System.Drawing.Size(534, 561);
+            this.Controls.Add(this.ScoreX_LBL);
             this.Controls.Add(this.Retry_BTN);
             this.Controls.Add(this.LBL_9);
             this.Controls.Add(this.LBL_8);
@@ -408,5 +422,6 @@
         private Label LBL_8;
         private Label LBL_9;
         private PictureBox Retry_BTN;
+        private Label ScoreX_LBL;
     }
 }

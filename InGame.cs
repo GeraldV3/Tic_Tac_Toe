@@ -209,6 +209,7 @@ namespace Tic_Tac_Toe
                 if (flip)
                 {
                     winner = "O";
+                    
                 }
                 else
                 {
@@ -760,6 +761,7 @@ namespace Tic_Tac_Toe
         }
         private void Retry_BTN_Click(object sender, EventArgs e)
         {
+            Application.Restart();
         }
     }
 }
