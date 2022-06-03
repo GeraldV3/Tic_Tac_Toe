@@ -40,10 +40,8 @@
             this.BTN_8 = new System.Windows.Forms.Button();
             this.BTN_9 = new System.Windows.Forms.Button();
             this.Home_btn = new System.Windows.Forms.PictureBox();
-            this.Player1 = new System.Windows.Forms.PictureBox();
             this.Player2 = new System.Windows.Forms.PictureBox();
             this.LBL_1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.LBL_2 = new System.Windows.Forms.Label();
             this.LBL_3 = new System.Windows.Forms.Label();
             this.LBL_4 = new System.Windows.Forms.Label();
@@ -53,19 +51,19 @@
             this.LBL_8 = new System.Windows.Forms.Label();
             this.LBL_9 = new System.Windows.Forms.Label();
             this.Retry_BTN = new System.Windows.Forms.PictureBox();
-            this.ScoreX_LBL = new System.Windows.Forms.Label();
+            this.Player1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_btn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Retry_BTN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player1)).BeginInit();
             this.SuspendLayout();
             // 
             // Grid
             // 
             this.Grid.BackColor = System.Drawing.Color.Transparent;
             this.Grid.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.Grid;
-            this.Grid.Location = new System.Drawing.Point(49, 184);
+            this.Grid.Location = new System.Drawing.Point(49, 183);
             this.Grid.Name = "Grid";
             this.Grid.Size = new System.Drawing.Size(444, 378);
             this.Grid.TabIndex = 0;
@@ -76,7 +74,7 @@
             this.BTN_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_1.Font = new System.Drawing.Font("Athletic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_1.Image = global::Tic_Tac_Toe.Properties.Resources.BTN1_axie;
-            this.BTN_1.Location = new System.Drawing.Point(52, 213);
+            this.BTN_1.Location = new System.Drawing.Point(52, 210);
             this.BTN_1.Name = "BTN_1";
             this.BTN_1.Size = new System.Drawing.Size(126, 93);
             this.BTN_1.TabIndex = 10;
@@ -88,7 +86,7 @@
             this.BTN_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.BTN_2.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_2_axie;
-            this.BTN_2.Location = new System.Drawing.Point(203, 212);
+            this.BTN_2.Location = new System.Drawing.Point(203, 210);
             this.BTN_2.Name = "BTN_2";
             this.BTN_2.Size = new System.Drawing.Size(126, 93);
             this.BTN_2.TabIndex = 11;
@@ -98,8 +96,9 @@
             // BTN_3
             // 
             this.BTN_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BTN_3.ForeColor = System.Drawing.Color.Cornsilk;
             this.BTN_3.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_3_axie;
-            this.BTN_3.Location = new System.Drawing.Point(352, 211);
+            this.BTN_3.Location = new System.Drawing.Point(352, 210);
             this.BTN_3.Name = "BTN_3";
             this.BTN_3.Size = new System.Drawing.Size(126, 93);
             this.BTN_3.TabIndex = 12;
@@ -110,7 +109,7 @@
             // 
             this.BTN_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_4.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_4_axie;
-            this.BTN_4.Location = new System.Drawing.Point(52, 327);
+            this.BTN_4.Location = new System.Drawing.Point(53, 325);
             this.BTN_4.Name = "BTN_4";
             this.BTN_4.Size = new System.Drawing.Size(126, 93);
             this.BTN_4.TabIndex = 13;
@@ -120,8 +119,9 @@
             // BTN_5
             // 
             this.BTN_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BTN_5.Font = new System.Drawing.Font("Showcard Gothic", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BTN_5.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_5_axie;
-            this.BTN_5.Location = new System.Drawing.Point(203, 327);
+            this.BTN_5.Location = new System.Drawing.Point(203, 326);
             this.BTN_5.Name = "BTN_5";
             this.BTN_5.Size = new System.Drawing.Size(126, 93);
             this.BTN_5.TabIndex = 14;
@@ -132,7 +132,7 @@
             // 
             this.BTN_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_6.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_6_axie;
-            this.BTN_6.Location = new System.Drawing.Point(352, 327);
+            this.BTN_6.Location = new System.Drawing.Point(352, 325);
             this.BTN_6.Name = "BTN_6";
             this.BTN_6.Size = new System.Drawing.Size(126, 93);
             this.BTN_6.TabIndex = 15;
@@ -143,7 +143,7 @@
             // 
             this.BTN_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_7.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_7_axie;
-            this.BTN_7.Location = new System.Drawing.Point(52, 440);
+            this.BTN_7.Location = new System.Drawing.Point(52, 441);
             this.BTN_7.Name = "BTN_7";
             this.BTN_7.Size = new System.Drawing.Size(126, 93);
             this.BTN_7.TabIndex = 16;
@@ -154,7 +154,7 @@
             // 
             this.BTN_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_8.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_8_axie;
-            this.BTN_8.Location = new System.Drawing.Point(203, 441);
+            this.BTN_8.Location = new System.Drawing.Point(203, 440);
             this.BTN_8.Name = "BTN_8";
             this.BTN_8.Size = new System.Drawing.Size(126, 93);
             this.BTN_8.TabIndex = 17;
@@ -165,7 +165,7 @@
             // 
             this.BTN_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BTN_9.Image = global::Tic_Tac_Toe.Properties.Resources.BTN_9_axie;
-            this.BTN_9.Location = new System.Drawing.Point(352, 441);
+            this.BTN_9.Location = new System.Drawing.Point(352, 440);
             this.BTN_9.Name = "BTN_9";
             this.BTN_9.Size = new System.Drawing.Size(126, 93);
             this.BTN_9.TabIndex = 18;
@@ -184,17 +184,6 @@
             this.Home_btn.TabStop = false;
             this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click);
             // 
-            // Player1
-            // 
-            this.Player1.BackColor = System.Drawing.Color.Transparent;
-            this.Player1.Image = global::Tic_Tac_Toe.Properties.Resources.Player_11;
-            this.Player1.Location = new System.Drawing.Point(49, 108);
-            this.Player1.Name = "Player1";
-            this.Player1.Size = new System.Drawing.Size(129, 70);
-            this.Player1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Player1.TabIndex = 21;
-            this.Player1.TabStop = false;
-            // 
             // Player2
             // 
             this.Player2.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
@@ -211,34 +200,23 @@
             // 
             this.LBL_1.AutoSize = true;
             this.LBL_1.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_1.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_1.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_1.Location = new System.Drawing.Point(75, 212);
+            this.LBL_1.Font = new System.Drawing.Font("Showcard Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_1.Location = new System.Drawing.Point(75, 206);
             this.LBL_1.Name = "LBL_1";
-            this.LBL_1.Size = new System.Drawing.Size(0, 92);
+            this.LBL_1.Size = new System.Drawing.Size(0, 83);
             this.LBL_1.TabIndex = 23;
             this.LBL_1.MouseHover += new System.EventHandler(this.LBL_1_MouseHover);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.LightCoral;
-            this.label1.Location = new System.Drawing.Point(114, 160);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 92);
-            this.label1.TabIndex = 24;
             // 
             // LBL_2
             // 
             this.LBL_2.AutoSize = true;
             this.LBL_2.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_2.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_2.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_2.Location = new System.Drawing.Point(226, 213);
+            this.LBL_2.Font = new System.Drawing.Font("Showcard Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_2.Location = new System.Drawing.Point(226, 206);
             this.LBL_2.Name = "LBL_2";
-            this.LBL_2.Size = new System.Drawing.Size(0, 92);
+            this.LBL_2.Size = new System.Drawing.Size(0, 83);
             this.LBL_2.TabIndex = 25;
             this.LBL_2.MouseHover += new System.EventHandler(this.LBL_2_MouseHover);
             // 
@@ -246,11 +224,11 @@
             // 
             this.LBL_3.AutoSize = true;
             this.LBL_3.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_3.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_3.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_3.Location = new System.Drawing.Point(369, 212);
+            this.LBL_3.Font = new System.Drawing.Font("Showcard Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_3.Location = new System.Drawing.Point(369, 206);
             this.LBL_3.Name = "LBL_3";
-            this.LBL_3.Size = new System.Drawing.Size(0, 92);
+            this.LBL_3.Size = new System.Drawing.Size(0, 83);
             this.LBL_3.TabIndex = 26;
             this.LBL_3.MouseHover += new System.EventHandler(this.LBL_3_MouseHover);
             // 
@@ -258,9 +236,9 @@
             // 
             this.LBL_4.AutoSize = true;
             this.LBL_4.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_4.Font = new System.Drawing.Font("Baskerville Old Face", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_4.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_4.Location = new System.Drawing.Point(75, 336);
+            this.LBL_4.Font = new System.Drawing.Font("Showcard Gothic", 45.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_4.Location = new System.Drawing.Point(75, 331);
             this.LBL_4.Name = "LBL_4";
             this.LBL_4.Size = new System.Drawing.Size(0, 76);
             this.LBL_4.TabIndex = 27;
@@ -270,9 +248,9 @@
             // 
             this.LBL_5.AutoSize = true;
             this.LBL_5.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_5.Font = new System.Drawing.Font("Baskerville Old Face", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_5.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_5.Location = new System.Drawing.Point(231, 336);
+            this.LBL_5.Font = new System.Drawing.Font("Showcard Gothic", 45.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_5.Location = new System.Drawing.Point(231, 331);
             this.LBL_5.Name = "LBL_5";
             this.LBL_5.Size = new System.Drawing.Size(0, 76);
             this.LBL_5.TabIndex = 28;
@@ -282,9 +260,9 @@
             // 
             this.LBL_6.AutoSize = true;
             this.LBL_6.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_6.Font = new System.Drawing.Font("Baskerville Old Face", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_6.ForeColor = System.Drawing.Color.LightCoral;
-            this.LBL_6.Location = new System.Drawing.Point(369, 336);
+            this.LBL_6.Font = new System.Drawing.Font("Showcard Gothic", 45.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBL_6.Location = new System.Drawing.Point(369, 331);
             this.LBL_6.Name = "LBL_6";
             this.LBL_6.Size = new System.Drawing.Size(0, 76);
             this.LBL_6.TabIndex = 29;
@@ -294,11 +272,11 @@
             // 
             this.LBL_7.AutoSize = true;
             this.LBL_7.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_7.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_7.ForeColor = System.Drawing.Color.LightCoral;
+            this.LBL_7.Font = new System.Drawing.Font("Showcard Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LBL_7.Location = new System.Drawing.Point(75, 440);
             this.LBL_7.Name = "LBL_7";
-            this.LBL_7.Size = new System.Drawing.Size(0, 92);
+            this.LBL_7.Size = new System.Drawing.Size(0, 83);
             this.LBL_7.TabIndex = 30;
             this.LBL_7.MouseHover += new System.EventHandler(this.LBL_7_MouseHover);
             // 
@@ -306,11 +284,11 @@
             // 
             this.LBL_8.AutoSize = true;
             this.LBL_8.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_8.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_8.ForeColor = System.Drawing.Color.LightCoral;
+            this.LBL_8.Font = new System.Drawing.Font("Showcard Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LBL_8.Location = new System.Drawing.Point(226, 440);
             this.LBL_8.Name = "LBL_8";
-            this.LBL_8.Size = new System.Drawing.Size(0, 92);
+            this.LBL_8.Size = new System.Drawing.Size(0, 83);
             this.LBL_8.TabIndex = 31;
             this.LBL_8.MouseHover += new System.EventHandler(this.LBL_8_MouseHover);
             // 
@@ -318,11 +296,11 @@
             // 
             this.LBL_9.AutoSize = true;
             this.LBL_9.BackColor = System.Drawing.Color.Transparent;
-            this.LBL_9.Font = new System.Drawing.Font("Baskerville Old Face", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LBL_9.ForeColor = System.Drawing.Color.LightCoral;
+            this.LBL_9.Font = new System.Drawing.Font("Showcard Gothic", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LBL_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.LBL_9.Location = new System.Drawing.Point(369, 441);
             this.LBL_9.Name = "LBL_9";
-            this.LBL_9.Size = new System.Drawing.Size(0, 92);
+            this.LBL_9.Size = new System.Drawing.Size(0, 83);
             this.LBL_9.TabIndex = 32;
             this.LBL_9.MouseHover += new System.EventHandler(this.LBL_9_MouseHover);
             // 
@@ -338,17 +316,17 @@
             this.Retry_BTN.TabStop = false;
             this.Retry_BTN.Click += new System.EventHandler(this.Retry_BTN_Click);
             // 
-            // ScoreX_LBL
+            // Player1
             // 
-            this.ScoreX_LBL.AutoSize = true;
-            this.ScoreX_LBL.BackColor = System.Drawing.Color.Transparent;
-            this.ScoreX_LBL.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ScoreX_LBL.ForeColor = System.Drawing.Color.Black;
-            this.ScoreX_LBL.Location = new System.Drawing.Point(184, 95);
-            this.ScoreX_LBL.Name = "ScoreX_LBL";
-            this.ScoreX_LBL.Size = new System.Drawing.Size(74, 86);
-            this.ScoreX_LBL.TabIndex = 34;
-            this.ScoreX_LBL.Text = "0";
+            this.Player1.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.Player1.BackColor = System.Drawing.Color.Transparent;
+            this.Player1.Image = global::Tic_Tac_Toe.Properties.Resources.Player_11;
+            this.Player1.Location = new System.Drawing.Point(49, 108);
+            this.Player1.Name = "Player1";
+            this.Player1.Size = new System.Drawing.Size(126, 70);
+            this.Player1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Player1.TabIndex = 22;
+            this.Player1.TabStop = false;
             // 
             // InGame
             // 
@@ -357,7 +335,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Tic_Tac_Toe.Properties.Resources.InGame;
             this.ClientSize = new System.Drawing.Size(534, 561);
-            this.Controls.Add(this.ScoreX_LBL);
             this.Controls.Add(this.Retry_BTN);
             this.Controls.Add(this.LBL_9);
             this.Controls.Add(this.LBL_8);
@@ -367,9 +344,8 @@
             this.Controls.Add(this.LBL_4);
             this.Controls.Add(this.LBL_3);
             this.Controls.Add(this.LBL_2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.Player2);
             this.Controls.Add(this.Player1);
+            this.Controls.Add(this.Player2);
             this.Controls.Add(this.Home_btn);
             this.Controls.Add(this.LBL_1);
             this.Controls.Add(this.BTN_9);
@@ -388,9 +364,9 @@
             this.Load += new System.EventHandler(this.InGame_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Home_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Retry_BTN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -409,10 +385,8 @@
         private Button BTN_8;
         private Button BTN_9;
         private PictureBox Home_btn;
-        private PictureBox Player1;
         private PictureBox Player2;
         private Label LBL_1;
-        private Label label1;
         private Label LBL_2;
         private Label LBL_3;
         private Label LBL_4;
@@ -422,6 +396,6 @@
         private Label LBL_8;
         private Label LBL_9;
         private PictureBox Retry_BTN;
-        private Label ScoreX_LBL;
+        private PictureBox Player1;
     }
 }

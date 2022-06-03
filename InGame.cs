@@ -13,12 +13,10 @@ namespace Tic_Tac_Toe
     public partial class InGame : Form
     {
         Form opener;
-        SoundPlayer InGameTheme = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\Theme Music.wav");
+        SoundPlayer InGameTheme = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\LobbyTheme.wav");
         SoundPlayer ButtonSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\ButtonSound.wav");
-        SoundPlayer HomeSound = new SoundPlayer(@"C:\Users\pc\Desktop\Tic Tac Toe\Picture and Sound\Pokemon.wav");
         bool flip = true;
         int counter = 0;
-        
         public InGame()
         {
             InitializeComponent();
@@ -26,33 +24,42 @@ namespace Tic_Tac_Toe
             //1st Layer
             Button Turn = (BTN_1);
             LBL_1.Visible = false;
+            BTN_1.Enabled = true;
   
 
             Button Turn2 = (BTN_2);
             LBL_2.Visible = false;
+            BTN_2.Enabled = true;
 
             Button Turn3 = (BTN_3);
             LBL_3.Visible = false;
+            BTN_3.Enabled = true;
 
             //2nd Layer
             Button Turn4 = (BTN_4);
             LBL_4.Visible = false;
+            BTN_4.Enabled = true;
 
             Button Turn5 = (BTN_5);
             LBL_5.Visible = false;
+            BTN_5.Enabled = true;
 
             Button Turn6 = (BTN_6);
             LBL_6.Visible = false;
+            BTN_6.Enabled = true;
 
             //3rd Layer
             Button Turn7 = (BTN_4);
             LBL_7.Visible = false;
+            BTN_7.Enabled = true;
 
             Button Turn8 = (BTN_8);
             LBL_8.Visible = false;
+            BTN_8.Enabled = true;
 
             Button Turn9 = (BTN_9);
             LBL_9.Visible = false;
+            BTN_9.Enabled = true;
         }
         private void BTN_1_Click(object sender, EventArgs e)
         {
@@ -173,7 +180,6 @@ namespace Tic_Tac_Toe
         }
         private void Home_btn_Click(object sender, EventArgs e)
         {
-            HomeSound.Play();
             opener.Close();
             this.Close();
         }
@@ -209,13 +215,12 @@ namespace Tic_Tac_Toe
                 if (flip)
                 {
                     winner = "O";
-                    
                 }
                 else
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -226,6 +231,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -241,6 +255,7 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
             }
         }
         private void LBL_2_MouseHover(object sender, EventArgs e)
@@ -280,7 +295,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -291,6 +306,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -305,6 +329,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void LBL_3_MouseHover(object sender, EventArgs e)
@@ -344,7 +378,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -355,6 +389,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -369,6 +412,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void LBL_4_MouseHover(object sender, EventArgs e)
@@ -408,7 +461,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -419,6 +472,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -433,6 +495,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void LBL_5_MouseHover(object sender, EventArgs e)
@@ -472,7 +544,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -483,6 +555,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -497,6 +578,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void LBL_6_MouseHover(object sender, EventArgs e)
@@ -536,7 +627,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -547,6 +638,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -561,6 +661,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void LBL_7_MouseHover(object sender, EventArgs e)
@@ -600,7 +710,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -611,6 +721,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -625,6 +744,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void LBL_8_MouseHover(object sender, EventArgs e)
@@ -664,7 +793,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -675,6 +804,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -689,6 +827,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void LBL_9_MouseHover(object sender, EventArgs e)
@@ -728,7 +876,7 @@ namespace Tic_Tac_Toe
                 {
                     winner = "X";
                 }
-                MessageBox.Show(winner + " Wins 100 Pesos");
+                MessageBox.Show("Player " + winner + " Wins 100 Pesos");
                 LBL_1.Text = "";
                 LBL_2.Text = "";
                 LBL_3.Text = "";
@@ -739,6 +887,15 @@ namespace Tic_Tac_Toe
                 LBL_8.Text = "";
                 LBL_9.Text = "";
                 counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
             counter = counter + 1;
             if (counter == 9)
@@ -753,6 +910,16 @@ namespace Tic_Tac_Toe
                 LBL_7.Text = "";
                 LBL_8.Text = "";
                 LBL_9.Text = "";
+                counter = 0;
+                BTN_1.Enabled = false;
+                BTN_2.Enabled = false;
+                BTN_3.Enabled = false;
+                BTN_4.Enabled = false;
+                BTN_5.Enabled = false;
+                BTN_6.Enabled = false;
+                BTN_7.Enabled = false;
+                BTN_8.Enabled = false;
+                BTN_9.Enabled = false;
             }
         }
         private void InGame_Load(object sender, EventArgs e)

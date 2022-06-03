@@ -160,6 +160,15 @@ namespace Tic_Tac_Toe.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ButtonSound1 {
+            get {
+                return ResourceManager.GetStream("ButtonSound1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Grid {
@@ -196,6 +205,15 @@ namespace Tic_Tac_Toe.Properties {
             get {
                 object obj = ResourceManager.GetObject("Lobby", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream LobbyTheme {
+            get {
+                return ResourceManager.GetStream("LobbyTheme", resourceCulture);
             }
         }
         
